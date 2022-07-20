@@ -1,4 +1,5 @@
 .container {
+  border: solid 1px tomato;
   width: 428px;
   margin: 0 auto;
 }
