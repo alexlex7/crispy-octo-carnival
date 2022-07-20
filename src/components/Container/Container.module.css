@@ -4,12 +4,6 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 590px) {
-  .container {
-    width: 590px;
-  }
-}
-
 @media screen and (min-width: 1205px) {
   .container {
     width: 1205px;

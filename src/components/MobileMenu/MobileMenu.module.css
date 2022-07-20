@@ -1,16 +1,11 @@
 /* MENU STYLES */
 .menuWrap {
-  /* position: fixed;
-  top: 0;
-  left: 0; */
   position: relative;
   z-index: 1;
 }
 
 .menuWrap .toggler {
   position: relative;
-  /* top: 0;
-  left: 0; */
   z-index: 2;
   cursor: pointer;
   width: 50px;

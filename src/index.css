@@ -61,13 +61,6 @@ article > * + * {
   margin-top: 1em;
 }
 
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--main-background-color);
