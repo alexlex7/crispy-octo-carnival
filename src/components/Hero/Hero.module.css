@@ -1,0 +1,72 @@
+.container {
+  background-color: var(--secondary-bg-color);
+}
+
+@media screen and (max-width: 1204px) {
+  .container {
+    padding: 49px 24px 366px 24px;
+    background-image: url(./images/armchair.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+
+.title {
+  font-family: 'Montserrat', 'sans-serif';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #fff;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.btn {
+  margin-top: 30px;
+  width: 149px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.image {
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1205px) {
+  .container {
+    padding: 101px 0px 137px 0px;
+    background-image: url(./images/armchairDesktop.jpg);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    margin-left: 511px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 68px;
+  }
+
+  .text {
+    margin-top: 20px;
+    margin-left: 511px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .btn {
+    margin-left: 511px;
+    margin-top: 35px;
+    width: 172px;
+    height: 56px;
+  }
+}
