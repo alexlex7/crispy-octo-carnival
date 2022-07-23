@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import Container from '../Container/Container';
+import { NavLink } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { ReactComponent as SearchIcon } from './images/searchIcon.svg';
 import { ReactComponent as MenuIcon } from './images/menu.svg';
@@ -68,24 +69,22 @@ export default function Header() {
             <nav>
               <ul className={styles.list}>
                 <li className={styles.listItem}>
-                  <a href="#" className={styles.navLink}>
+                  {/* <a href="#" className={styles.navLink}>
                     Home
-                  </a>
+                  </a> */}
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li className={styles.listItem}>
-                  <a href="#" className={styles.navLink}>
+                  {/* <a href="#" className={styles.navLink}>
                     About
-                  </a>
+                  </a> */}
+                  <NavLink to="about">About</NavLink>
                 </li>
                 <li className={styles.listItem}>
-                  <a href="#" className={styles.navLink}>
-                    Features
-                  </a>
+                  <NavLink to="features">Features</NavLink>
                 </li>
                 <li className={styles.listItem}>
-                  <a href="#" className={styles.navLink}>
-                    Contact
-                  </a>
+                  <NavLink to="contact">Contact</NavLink>
                 </li>
               </ul>
             </nav>
