@@ -1,23 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Logo/> spec logo renders with correct text 1`] = `
+exports[`renders the component 1`] = `
 <DocumentFragment>
-  <a
+  <p
     class="logo"
-    href="http://localhost:3000/"
   >
     DudeShape
-  </a>
-</DocumentFragment>
-`;
-
-exports[`<Logo/> spec renders link 1`] = `
-<DocumentFragment>
-  <a
-    class="logo"
-    href="http://localhost:3000/"
-  >
-    DudeShape
-  </a>
+  </p>
 </DocumentFragment>
 `;

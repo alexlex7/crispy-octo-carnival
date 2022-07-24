@@ -1,12 +1,15 @@
 import React from 'react';
 import styles from './Logo.module.css';
+import PropTypes from 'prop-types';
 
-const defaultURL = 'http://localhost:3000/';
-
-export default function Logo({ text = 'DudeShape', logoURL = defaultURL }) {
-  return (
-    <a className={styles.logo} href={logoURL}>
-      {text}
-    </a>
-  );
+export default function Logo({ text }) {
+  return <p className={styles.logo}>{text}</p>;
 }
+
+Logo.propTypes = {
+  text: PropTypes.string,
+};
+
+Logo.defaultProps = {
+  text: 'DudeShape',
+};
