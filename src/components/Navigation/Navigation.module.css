@@ -1,0 +1,10 @@
+.wrapper {
+  padding: 44px 0px 27px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container > button:first-child {
+  margin-right: 30px;
+}

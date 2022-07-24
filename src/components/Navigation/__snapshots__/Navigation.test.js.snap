@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders navigation component 1`] = `
+<DocumentFragment>
+  <div
+    class="container "
+  >
+    <div
+      class="wrapper"
+    >
+      <p
+        class="logo"
+      >
+        DudeShape
+      </p>
+      <nav>
+        <ul
+          class="list"
+        >
+          <li>
+            <a
+              aria-current="page"
+              class="active"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              class="item"
+              href="/about"
+            >
+              About
+            </a>
+          </li>
+          <li>
+            <a
+              class="item"
+              href="/features"
+            >
+              Features
+            </a>
+          </li>
+          <li>
+            <a
+              class="item"
+              href="/contact"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div
+        class="container"
+      >
+        <button
+          class="btn"
+          type="button"
+        >
+          <svg
+            class="icon"
+          >
+            searchIcon.svg
+          </svg>
+        </button>
+        <button
+          class="btn"
+          type="button"
+        >
+          <svg
+            class="icon"
+          >
+            menu.svg
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
