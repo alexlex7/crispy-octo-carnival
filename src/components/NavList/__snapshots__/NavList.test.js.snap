@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders navlist component 1`] = `
+<DocumentFragment>
+  <nav>
+    <ul
+      class="list"
+    >
+      <li>
+        <a
+          aria-current="page"
+          class="active"
+          href="/"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          class="item"
+          href="/about"
+        >
+          About
+        </a>
+      </li>
+      <li>
+        <a
+          class="item"
+          href="/features"
+        >
+          Features
+        </a>
+      </li>
+      <li>
+        <a
+          class="item"
+          href="/contact"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+</DocumentFragment>
+`;

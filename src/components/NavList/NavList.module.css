@@ -1,0 +1,14 @@
+.list {
+  display: flex;
+  column-gap: 50px;
+  list-style: none;
+}
+
+/* @media screen and (min-width: 1205px) {
+  .listItem:not(:last-child) {
+    margin-right: 50px;
+  }
+  .link {
+    text-decoration: none;
+  }
+} */
