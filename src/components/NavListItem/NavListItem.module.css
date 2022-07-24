@@ -1,0 +1,17 @@
+.item {
+  font-size: 16px;
+  font-weight: 400;
+  color: #161616;
+  text-decoration: none;
+}
+
+.active {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(141, 233, 200);
+}
+
+.item:hover {
+  color: #244d4d;
+  text-decoration: underline;
+}
