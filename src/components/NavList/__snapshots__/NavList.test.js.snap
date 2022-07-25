@@ -6,7 +6,9 @@ exports[`renders navlist component 1`] = `
     <ul
       class="list"
     >
-      <li>
+      <li
+        class="listItem"
+      >
         <a
           aria-current="page"
           class="active"
@@ -15,7 +17,9 @@ exports[`renders navlist component 1`] = `
           Home
         </a>
       </li>
-      <li>
+      <li
+        class="listItem"
+      >
         <a
           class="item"
           href="/about"
@@ -23,7 +27,9 @@ exports[`renders navlist component 1`] = `
           About
         </a>
       </li>
-      <li>
+      <li
+        class="listItem"
+      >
         <a
           class="item"
           href="/features"
@@ -31,7 +37,9 @@ exports[`renders navlist component 1`] = `
           Features
         </a>
       </li>
-      <li>
+      <li
+        class="listItem"
+      >
         <a
           class="item"
           href="/contact"

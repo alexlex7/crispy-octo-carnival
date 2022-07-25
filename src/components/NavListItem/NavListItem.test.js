@@ -8,5 +8,5 @@ test('renders NavListItem component', () => {
   });
   const linkItem = screen.getByRole('link', { name: 'Home' });
   expect(linkItem).toBeInTheDocument();
-  expect(asFragment).toMatchSnapshot();
+  expect(asFragment()).toMatchSnapshot();
 });

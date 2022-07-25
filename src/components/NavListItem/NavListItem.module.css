@@ -1,17 +1,47 @@
-.item {
-  font-size: 16px;
-  font-weight: 400;
-  color: #161616;
-  text-decoration: none;
+@media screen and (max-width: 1204px) {
+  .listItem {
+    display: flex;
+    justify-content: center;
+    width: 160px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+
+  .item {
+    font-size: 24px;
+    font-weight: 400;
+    color: #161616;
+    text-decoration: none;
+  }
+
+  .active {
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(141, 233, 200);
+  }
+
+  .item:hover {
+    color: #244d4d;
+    text-decoration: underline;
+  }
 }
 
-.active {
-  font-size: 16px;
-  font-weight: 400;
-  color: rgb(141, 233, 200);
-}
+@media screen and (min-width: 1205px) {
+  .item {
+    font-size: 16px;
+    font-weight: 400;
+    color: #161616;
+    text-decoration: none;
+  }
 
-.item:hover {
-  color: #244d4d;
-  text-decoration: underline;
+  .active {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(141, 233, 200);
+  }
+
+  .item:hover {
+    color: #244d4d;
+    text-decoration: underline;
+  }
 }

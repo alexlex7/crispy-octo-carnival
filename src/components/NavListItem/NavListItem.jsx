@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 export default function NavListItem({ to, text }) {
   return (
-    <li>
+    <li className={styles.listItem}>
       <NavLink
         to={to}
         className={({ isActive }) => (isActive ? styles.active : styles.item)}

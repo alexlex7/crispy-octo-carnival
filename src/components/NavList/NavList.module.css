@@ -1,14 +1,17 @@
-.list {
-  display: flex;
-  column-gap: 50px;
-  list-style: none;
+@media screen and (max-width: 1204px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+  }
 }
 
-/* @media screen and (min-width: 1205px) {
-  .listItem:not(:last-child) {
-    margin-right: 50px;
+@media screen and (min-width: 1205px) {
+  .list {
+    display: flex;
+    column-gap: 50px;
+    list-style: none;
   }
-  .link {
-    text-decoration: none;
-  }
-} */
+}
