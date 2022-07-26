@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders menu button component 1`] = `
+<DocumentFragment>
+  <button
+    class="btn"
+    type="button"
+  >
+    <svg
+      class="icon"
+    >
+      menu.svg
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`renders mobile menu button component 1`] = `
+<DocumentFragment>
+  <button
+    class="btn"
+    type="button"
+  >
+    <svg
+      class="icon"
+    >
+      mobileMenuIcon.svg
+    </svg>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`renders search button component 1`] = `
+<DocumentFragment>
+  <button
+    class="btn"
+    type="button"
+  >
+    <svg
+      class="icon"
+    >
+      searchIcon.svg
+    </svg>
+  </button>
+</DocumentFragment>
+`;

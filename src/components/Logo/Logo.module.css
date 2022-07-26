@@ -1,0 +1,17 @@
+.logo {
+  display: inline-block;
+
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 24px;
+  font-weight: 700;
+  color: #244d4d;
+  text-decoration: none;
+
+  transition: all 0.5s ease;
+}
+
+.logo:hover,
+.logo:focus {
+  color: #fff;
+  background-color: #578a8a;
+}
