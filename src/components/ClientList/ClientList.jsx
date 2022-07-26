@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 export default function ClientList({ items, isMobile = false }) {
   const clients = isMobile ? items.slice(0, 5) : items.slice(0, 6);
-  // console.log(cli
   return (
     <ul className={isMobile ? styles.mobileList : styles.desktopList}>
       {clients.map((client) => (

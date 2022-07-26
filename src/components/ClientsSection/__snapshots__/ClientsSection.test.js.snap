@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render clients section component 1`] = `
+<DocumentFragment>
+  <div
+    class="container "
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="titleWrapper"
+      >
+        <h2
+          class="title"
+        >
+          Trusted by 20+ companies
+        </h2>
+      </div>
+      <div
+        class="listWrapper"
+      >
+        <ul
+          class="desktopList"
+        >
+          <li
+            class="listItem"
+          >
+            <img
+              alt="Mastercard"
+              src="http://localhost:8080/images/clients/masterCard.jpg"
+              title="Mastercard"
+            />
+          </li>
+          <li
+            class="listItem"
+          >
+            <img
+              alt="Airbnb"
+              src="http://localhost:8080/images/clients/airbnb.jpg"
+              title="Airbnb"
+            />
+          </li>
+          <li
+            class="listItem"
+          >
+            <img
+              alt="Uber"
+              src="http://localhost:8080/images/clients/uber.jpg"
+              title="Uber"
+            />
+          </li>
+          <li
+            class="listItem"
+          >
+            <img
+              alt="PayPal"
+              src="http://localhost:8080/images/clients/paypal.jpg"
+              title="PayPal"
+            />
+          </li>
+          <li
+            class="listItem"
+          >
+            <img
+              alt="Visa"
+              src="http://localhost:8080/images/clients/visa.jpg"
+              title="Visa"
+            />
+          </li>
+          <li
+            class="listItem"
+          >
+            <img
+              alt="Stripe"
+              src="http://localhost:8080/images/clients/stripe.jpg"
+              title="Stripe"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
