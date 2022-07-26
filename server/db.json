@@ -1,0 +1,130 @@
+{
+  "pages": [
+    { "text": "Home", "to": "/" },
+    { "text": "About", "to": "about" },
+    { "text": "Features", "to": "features" },
+    { "text": "Contact", "to": "contact" }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "Mastercard",
+      "image": "http://localhost:8080/images/clients/masterCard.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Airbnb",
+      "image": "http://localhost:8080/images/clients/airbnb.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Uber",
+      "image": "http://localhost:8080/images/clients/uber.jpg"
+    },
+    {
+      "id": "4",
+      "name": "PayPal",
+      "image": "http://localhost:8080/images/clients/paypal.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Visa",
+      "image": "http://localhost:8080/images/clients/visa.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Stripe",
+      "image": "http://localhost:8080/images/clients/stripe.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Mastercard",
+      "image": "http://localhost:8080/images/clients/masterCard.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Airbnb",
+      "image": "http://localhost:8080/images/clients/airbnb.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Uber",
+      "image": "http://localhost:8080/images/clients/uber.jpg"
+    },
+    {
+      "id": "10",
+      "name": "PayPal",
+      "image": "http://localhost:8080/images/clients/paypal.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Visa",
+      "image": "http://localhost:8080/images/clients/visa.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Stripe",
+      "image": "http://localhost:8080/images/clients/stripe.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Mastercard",
+      "image": "http://localhost:8080/images/clients/masterCard.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Airbnb",
+      "image": "http://localhost:8080/images/clients/airbnb.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Uber",
+      "image": "http://localhost:8080/images/clients/uber.jpg"
+    },
+    {
+      "id": "16",
+      "name": "PayPal",
+      "image": "http://localhost:8080/images/clients/paypal.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Visa",
+      "image": "http://localhost:8080/images/clients/visa.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Stripe",
+      "image": "http://localhost:8080/images/clients/stripe.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Mastercard",
+      "image": "http://localhost:8080/images/clients/masterCard.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Airbnb",
+      "image": "http://localhost:8080/images/clients/airbnb.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Uber",
+      "image": "http://localhost:8080/images/clients/uber.jpg"
+    },
+    {
+      "id": "22",
+      "name": "PayPal",
+      "image": "http://localhost:8080/images/clients/paypal.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Visa",
+      "image": "http://localhost:8080/images/clients/visa.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Stripe",
+      "image": "http://localhost:8080/images/clients/stripe.jpg"
+    }
+  ]
+}
