@@ -1,0 +1,15 @@
+.mobileList {
+  display: flex;
+  column-gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.desktopList {
+  display: flex;
+  column-gap: 100px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
