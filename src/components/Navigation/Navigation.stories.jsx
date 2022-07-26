@@ -1,13 +1,7 @@
 import React from 'react';
+import pages from '../../mock/pages.json';
 
 import Navigation from './Navigation';
-// import { pages } from '../NavList/NavList.stories';
-const pages = [
-  { text: 'Home', to: '/' },
-  { text: 'About', to: 'about' },
-  { text: 'Features', to: 'features' },
-  { text: 'Contact', to: 'contact' },
-];
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
