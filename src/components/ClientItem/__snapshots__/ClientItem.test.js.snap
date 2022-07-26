@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders client item 1`] = `
+<DocumentFragment>
+  <li
+    class="listItem"
+  >
+    <img
+      alt="Mastercard"
+      src="http://localhost:8080/images/clients/masterCard.jpg"
+      title="Mastercard"
+    />
+  </li>
+</DocumentFragment>
+`;
