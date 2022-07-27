@@ -1,0 +1,24 @@
+{
+  "title": "About Us",
+  "description": "All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials",
+  "features": [
+    {
+      "title": "Best Quality",
+      "text": "All of our furniture uses the best materials and choices",
+      "imageURL": "http://localhost:8080/images/features/quality.png",
+      "mobileImageURL": "http://localhost:8080/images/features/mobileQuality.png"
+    },
+    {
+      "title": "Free Shipping",
+      "text": "All of our furniture uses the best materials and choices",
+      "imageURL": "http://localhost:8080/images/features/best.png",
+      "mobileImageURL": "http://localhost:8080/images/features/mobileBest.png"
+    },
+    {
+      "title": "Free Shipping",
+      "text": "All of our furniture uses the best materials and choices",
+      "imageURL": "http://localhost:8080/images/features/shipping.png",
+      "mobileImageURL": "http://localhost:8080/images/features/mobileShipping.png"
+    }
+  ]
+}
