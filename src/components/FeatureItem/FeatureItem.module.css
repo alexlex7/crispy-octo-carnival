@@ -1,6 +1,7 @@
 .listItem {
   display: flex;
   column-gap: 16px;
+  margin-bottom: 0;
 }
 
 .thumb {

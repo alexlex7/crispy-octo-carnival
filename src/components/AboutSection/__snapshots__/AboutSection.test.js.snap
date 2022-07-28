@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render about section 1`] = `
+<DocumentFragment>
+  <div
+    class="container "
+  >
+    <div
+      class="wrapper"
+    >
+      <div
+        class="thumb"
+      >
+        <div
+          class="imageWrapper"
+        >
+          <img
+            alt="furniture"
+            sizes="(min-width: 1205px) 596px, (max-width: 1204px) 332px, 332px)"
+            src="http://localhost:8080/images/about/mobileAbout.jpg"
+            srcset="http://localhost:8080/images/about/mobileAbout.jpg 332w, http://localhost:8080/images/about/about.jpg 596w"
+            title="furniture"
+          />
+        </div>
+      </div>
+      <div>
+        <h2
+          class="title"
+        >
+          About Us
+        </h2>
+        <p
+          class="text"
+        >
+          All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials
+        </p>
+        <ul
+          class="list"
+        >
+          <li
+            class="listItem"
+          >
+            <div
+              class="thumb"
+            >
+              <img
+                alt="Best Quality"
+                sizes="(min-width: 1205px) 50px, (max-width: 1204px) 28px, 28px)"
+                src="http://localhost:8080/images/features/mobileQuality.png"
+                srcset="http://localhost:8080/images/features/mobileQuality.png 28w, http://localhost:8080/images/features/quality.png 50w"
+                title="Best Quality"
+              />
+            </div>
+            <div>
+              <h6
+                class="title"
+              >
+                Best Quality
+              </h6>
+              <p
+                class="text"
+              >
+                All of our furniture uses the best materials and choices
+              </p>
+            </div>
+          </li>
+          <li
+            class="listItem"
+          >
+            <div
+              class="thumb"
+            >
+              <img
+                alt="Free Shipping"
+                sizes="(min-width: 1205px) 50px, (max-width: 1204px) 28px, 28px)"
+                src="http://localhost:8080/images/features/mobileBest.png"
+                srcset="http://localhost:8080/images/features/mobileBest.png 28w, http://localhost:8080/images/features/best.png 50w"
+                title="Free Shipping"
+              />
+            </div>
+            <div>
+              <h6
+                class="title"
+              >
+                Free Shipping
+              </h6>
+              <p
+                class="text"
+              >
+                All of our furniture uses the best materials and choices
+              </p>
+            </div>
+          </li>
+          <li
+            class="listItem"
+          >
+            <div
+              class="thumb"
+            >
+              <img
+                alt="Free Shipping"
+                sizes="(min-width: 1205px) 50px, (max-width: 1204px) 28px, 28px)"
+                src="http://localhost:8080/images/features/mobileShipping.png"
+                srcset="http://localhost:8080/images/features/mobileShipping.png 28w, http://localhost:8080/images/features/shipping.png 50w"
+                title="Free Shipping"
+              />
+            </div>
+            <div>
+              <h6
+                class="title"
+              >
+                Free Shipping
+              </h6>
+              <p
+                class="text"
+              >
+                All of our furniture uses the best materials and choices
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

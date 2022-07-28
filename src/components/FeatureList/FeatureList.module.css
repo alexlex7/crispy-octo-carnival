@@ -1,0 +1,14 @@
+.list {
+  margin: 0;
+  padding: 0;
+
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@media screen and (min-width: 1205px) {
+  .list {
+    row-gap: 30px;
+  }
+}

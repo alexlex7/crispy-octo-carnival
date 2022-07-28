@@ -154,6 +154,7 @@
   "about": {
     "title": "About Us",
     "description": "All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials",
+    "imageURL": "http://localhost:8080/images/about/about.jpg",
     "features": [
       {
         "title": "Best Quality",
