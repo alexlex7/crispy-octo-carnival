@@ -1,0 +1,233 @@
+{
+  "pages": [
+    { "text": "Home", "to": "/" },
+    { "text": "About", "to": "about" },
+    { "text": "Features", "to": "features" },
+    { "text": "Contact", "to": "contact" }
+  ],
+  "clients": [
+    {
+      "id": "1",
+      "name": "Mastercard",
+      "imageURL": "http://localhost:8080/images/clients/masterCard.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/masterCardMobile.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Airbnb",
+      "imageURL": "http://localhost:8080/images/clients/airbnb.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/airbnbMobile.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Uber",
+      "imageURL": "http://localhost:8080/images/clients/uber.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/uberMobile.jpg"
+    },
+    {
+      "id": "4",
+      "name": "PayPal",
+      "imageURL": "http://localhost:8080/images/clients/paypal.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/paypalMobile.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Visa",
+      "imageURL": "http://localhost:8080/images/clients/visa.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Stripe",
+      "imageURL": "http://localhost:8080/images/clients/stripe.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Mastercard",
+      "imageURL": "http://localhost:8080/images/clients/masterCard.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/masterCardMobile.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Airbnb",
+      "imageURL": "http://localhost:8080/images/clients/airbnb.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/airbnbMobile.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Uber",
+      "imageURL": "http://localhost:8080/images/clients/uber.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/uberMobile.jpg"
+    },
+    {
+      "id": "10",
+      "name": "PayPal",
+      "imageURL": "http://localhost:8080/images/clients/paypal.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/paypalMobile.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Visa",
+      "imageURL": "http://localhost:8080/images/clients/visa.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Stripe",
+      "imageURL": "http://localhost:8080/images/clients/stripe.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Mastercard",
+      "imageURL": "http://localhost:8080/images/clients/masterCard.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/masterCardMobile.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Airbnb",
+      "imageURL": "http://localhost:8080/images/clients/airbnb.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/airbnbMobile.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Uber",
+      "imageURL": "http://localhost:8080/images/clients/uber.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/uberMobile.jpg"
+    },
+    {
+      "id": "16",
+      "name": "PayPal",
+      "imageURL": "http://localhost:8080/images/clients/paypal.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/paypalMobile.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Visa",
+      "imageURL": "http://localhost:8080/images/clients/visa.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Stripe",
+      "imageURL": "http://localhost:8080/images/clients/stripe.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Mastercard",
+      "imageURL": "http://localhost:8080/images/clients/masterCard.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/masterCardMobile.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Airbnb",
+      "imageURL": "http://localhost:8080/images/clients/airbnb.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/airbnbMobile.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Uber",
+      "imageURL": "http://localhost:8080/images/clients/uber.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/uberMobile.jpg"
+    },
+    {
+      "id": "22",
+      "name": "PayPal",
+      "imageURL": "http://localhost:8080/images/clients/paypal.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/paypalMobile.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Visa",
+      "imageURL": "http://localhost:8080/images/clients/visa.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Stripe",
+      "imageURL": "http://localhost:8080/images/clients/stripe.jpg",
+      "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+    }
+  ],
+  "about": {
+    "title": "About Us",
+    "description": "All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials",
+    "imageURL": "http://localhost:8080/images/about/about.jpg",
+    "features": [
+      {
+        "title": "Best Quality",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/quality.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileQuality.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/best.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileBest.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/shipping.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileShipping.png"
+      },
+      {
+        "title": "Best Quality",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/quality.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileQuality.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/best.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileBest.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/shipping.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileShipping.png"
+      },
+      {
+        "title": "Best Quality",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/quality.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileQuality.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/best.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileBest.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/shipping.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileShipping.png"
+      },
+      {
+        "title": "Best Quality",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/quality.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileQuality.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/best.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileBest.png"
+      },
+      {
+        "title": "Free Shipping",
+        "text": "All of our furniture uses the best materials and choices",
+        "imageURL": "http://localhost:8080/images/features/shipping.png",
+        "mobileImageURL": "http://localhost:8080/images/features/mobileShipping.png"
+      }
+    ]
+  }
+}

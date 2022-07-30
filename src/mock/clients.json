@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Mastercard",
+    "imageURL": "http://localhost:8080/images/clients/masterCard.jpg",
+    "mobileImageURL": "http://localhost:8080/images/clients/masterCardMobile.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Airbnb",
+    "imageURL": "http://localhost:8080/images/clients/airbnb.jpg",
+    "mobileImageURL": "http://localhost:8080/images/clients/airbnbMobile.jpg"
+  },
+  {
+    "id": "3",
+    "name": "Uber",
+    "imageURL": "http://localhost:8080/images/clients/uber.jpg",
+    "mobileImageURL": "http://localhost:8080/images/clients/uberMobile.jpg"
+  },
+  {
+    "id": "4",
+    "name": "PayPal",
+    "imageURL": "http://localhost:8080/images/clients/paypal.jpg",
+    "mobileImageURL": "http://localhost:8080/images/clients/paypalMobile.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Visa",
+    "imageURL": "http://localhost:8080/images/clients/visa.jpg",
+    "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+  },
+  {
+    "id": "6",
+    "name": "Stripe",
+    "imageURL": "http://localhost:8080/images/clients/stripe.jpg",
+    "mobileImageURL": "http://localhost:8080/images/clients/visaMobile.jpg"
+  }
+]

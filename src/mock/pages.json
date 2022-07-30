@@ -1,0 +1,6 @@
+[
+  { "text": "Home", "to": "/" },
+  { "text": "About", "to": "about" },
+  { "text": "Features", "to": "features" },
+  { "text": "Contact", "to": "contact" }
+]

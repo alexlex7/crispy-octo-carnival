@@ -1,0 +1,50 @@
+.listItem {
+  display: flex;
+  column-gap: 16px;
+  margin-bottom: 0;
+}
+
+.thumb {
+}
+
+.title {
+  padding: 0;
+  margin: 0px 0px 4px 0px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #244d4d;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+  width: 151px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #383738;
+}
+
+@media screen and (min-width: 1205px) {
+  .listItem {
+    column-gap: 28px;
+  }
+  .title {
+    margin-bottom: 14px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .text {
+    width: 272px;
+
+    font-size: 18px;
+    line-height: 27px;
+  }
+}

@@ -1,17 +1,19 @@
 import React from 'react';
-import NavList from './NavList';
-import * as pages from '../../mock/pages.json';
+import ClientItem from './ClientItem';
+import client from '../../mock/client.json';
+
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'Navigation/NavList',
-  component: NavList,
+  title: 'Clients/ClientItem',
+  component: ClientItem,
+  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 };
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template = (args) => <NavList {...args} />;
+const Template = (args) => <ClientItem {...args} />;
 
 export const Default = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Default.args = {
-  pages,
+  client,
 };
