@@ -9,11 +9,9 @@ export default function ClientsSection({ items, isMobile, totalClients }) {
   return (
     <Container>
       <div className={styles.wrapper}>
-        <div className={styles.titleWrapper}>
-          <h2 className={styles.title}>
-            Trusted by {roundNumber(totalClients)}+ companies
-          </h2>
-        </div>
+        <h2 className={styles.title}>
+          Trusted by {roundNumber(totalClients)}+ companies
+        </h2>
         <div className={styles.listWrapper}>
           <ClientList items={items} isMobile={isMobile} />
         </div>

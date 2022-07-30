@@ -8,15 +8,11 @@ exports[`render clients section component 1`] = `
     <div
       class="wrapper"
     >
-      <div
-        class="titleWrapper"
+      <h2
+        class="title"
       >
-        <h2
-          class="title"
-        >
-          Trusted by 20+ companies
-        </h2>
-      </div>
+        Trusted by 20+ companies
+      </h2>
       <div
         class="listWrapper"
       >

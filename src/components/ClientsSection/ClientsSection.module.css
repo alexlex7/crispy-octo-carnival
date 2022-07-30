@@ -1,9 +1,3 @@
-.titleWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .listWrapper {
   display: flex;
   justify-content: center;
@@ -22,6 +16,10 @@
 @media screen and (max-width: 1204px) {
   .wrapper {
     padding: 60px 0px 98px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
   }
   .title {
     font-size: 18px;
@@ -35,6 +33,10 @@
 @media screen and (min-width: 1205px) {
   .wrapper {
     padding: 140px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
   }
   .title {
     font-size: 32px;
