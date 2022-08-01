@@ -1,0 +1,172 @@
+.listItem {
+  width: 380px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+
+  background: #ffffff;
+  box-shadow: 0px 13px 26px rgba(0, 0, 0, 0.07);
+}
+.thumb {
+  width: 380px;
+  height: 246px;
+}
+
+.thumb > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.content {
+  padding: 30px 24px 27px 24px;
+}
+
+.textWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 21px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #242424;
+}
+
+.btnWrapper {
+  display: flex;
+  column-gap: 8px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #154444;
+}
+
+.btn {
+  padding: 6px 0px;
+  width: 79px;
+
+  font-size: 12px;
+  line-height: 21px;
+  color: #ffffff;
+
+  background-color: #244d4d;
+  border: none;
+  transition: 0.3s;
+}
+
+.btnActive {
+  background-color: #ef5423;
+}
+
+.activeIcon {
+  fill: white;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #3b7d7d;
+}
+
+.checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.label {
+  width: 26px;
+  height: 26px;
+
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  border-radius: 50%;
+
+  background-color: #ecf4ff;
+}
+
+.label:hover {
+  background-color: antiquewhite;
+}
+
+.labelActive {
+  composes: label;
+  background-color: #ef5423;
+}
+
+.labelActive:hover {
+  background-color: #fa3f06;
+}
+
+.icon {
+  fill: white;
+}
+
+/* .checkbox:checked + .icon {
+  fill: white;
+} */
+
+/* .favoriteInput + label::before {
+  content: '';
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border-radius: 50%;
+  background-image: url(../../assets/images/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  background-color: #ecf4ff;
+}
+.favoriteInput:checked + label::before {
+  background-color: #ef5423;
+  background-image: url(../../assets/images/heart.svg);
+} */
+
+/* .btn {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center; */
+/* align-items: center; */
+
+/* background-color: #ef5423; */
+/* background-color: #ecf4ff;
+  border-radius: 100%;
+
+  border: none;
+  transition: 0.3s;
+} */
+
+/* .btn:hover,
+.btn:focus {
+  background-color: antiquewhite;
+}
+
+.icon {
+  display: block;
+  align-self: center;
+  fill: black;
+} */

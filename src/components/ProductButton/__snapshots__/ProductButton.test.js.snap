@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render product item 1`] = `
+<DocumentFragment>
+  <button
+    class="btn"
+    type="button"
+  >
+    <svg
+      class="icon"
+    >
+      share.svg
+    </svg>
+  </button>
+</DocumentFragment>
+`;

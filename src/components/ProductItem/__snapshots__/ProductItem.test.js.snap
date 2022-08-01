@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render product item 1`] = `
+<DocumentFragment>
+  <div
+    class="listItem"
+  >
+    <div
+      class="thumb"
+    >
+      <img
+        alt="White Swan Chair"
+        src="http://localhost:8080/images/furniture/chair.jpg"
+        title="White Swan Chair"
+      />
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="textWrapper"
+      >
+        <p
+          class="text"
+        >
+          White Swan Chair
+        </p>
+        <div
+          class="btnWrapper"
+        >
+          <label
+            class="label"
+          >
+            <input
+              class="checkbox"
+              type="checkbox"
+            />
+            <svg
+              class=""
+            >
+              heart.svg
+            </svg>
+          </label>
+          <button
+            class="btn"
+            type="button"
+          >
+            <svg
+              class="icon"
+            >
+              share.svg
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        class="container"
+      >
+        <p
+          class="price"
+        >
+          $40
+        </p>
+        <button
+          class="btn"
+          type="button"
+        >
+          Buy Now
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
