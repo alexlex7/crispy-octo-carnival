@@ -1,0 +1,27 @@
+.btn {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  /* background-color: #ef5423; */
+  background-color: #ecf4ff;
+  border-radius: 100%;
+
+  border: none;
+  transition: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: antiquewhite;
+}
+
+.icon {
+  display: block;
+  align-self: center;
+  fill: black;
+}
