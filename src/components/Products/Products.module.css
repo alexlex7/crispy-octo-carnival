@@ -1,0 +1,31 @@
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.title {
+  margin-bottom: 20px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 52px;
+
+  color: #242424;
+}
+
+.text {
+  margin-bottom: 80px;
+  max-width: 820px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+
+  color: #383738;
+}
