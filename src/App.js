@@ -1,14 +1,16 @@
 import { Route, Routes } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import About from './views/About';
 import Contact from './views/Contact';
 import Features from './views/Features';
 import Home from './views/Home';
 import axios from 'axios';
+import favoriteContext from './contexts/favorite/context';
 
 function App() {
   const [pages, setPages] = useState([]);
+  const { products, setProducts } = useContext(favoriteContext);
 
   useEffect(() => {
     const getPages = async () => {
@@ -27,7 +29,7 @@ function App() {
     <>
       {pages.length > 0 ? (
         <>
-          <Navigation items={pages} />
+          <Navigation items={pages} products={products} />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
