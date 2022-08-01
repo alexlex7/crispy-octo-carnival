@@ -1,0 +1,46 @@
+.wrapper {
+  position: relative;
+}
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 1200px;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 1s;
+}
+.indicators {
+  position: absolute;
+  right: 0;
+  top: -120px;
+  display: flex;
+  justify-content: center;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  background-color: green;
+  color: #fff;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+
+  background-color: #f4f6f6;
+}
+
+.btn:disabled .icon {
+  fill: #d1cece;
+}
+
+.icon {
+  fill: #666666;
+}
