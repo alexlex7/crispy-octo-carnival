@@ -70,6 +70,18 @@ exports[`renders navigation component 1`] = `
         <div
           class="container"
         >
+          <div
+            class="favoriteWrapper"
+          >
+            <svg
+              class="favoriteIcon"
+            >
+              heart.svg
+            </svg>
+            <p
+              class="favoriteText"
+            />
+          </div>
           <button
             class="btn"
             type="button"

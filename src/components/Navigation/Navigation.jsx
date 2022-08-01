@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Container from '../Container/Container';
 import NavList from '../NavList/NavList';
 import Logo from '../Logo/Logo';
@@ -6,8 +6,9 @@ import Button from '../Button/Button';
 import { useMediaQuery } from 'react-responsive';
 import styles from './Navigation.module.css';
 import PropTypes from 'prop-types';
+import { ReactComponent as FavoriteIcon } from '../../assets/images/heart.svg';
 
-export default function Navigation({ items }) {
+export default function Navigation({ items, products = [] }) {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 1204 });
 
@@ -18,6 +19,10 @@ export default function Navigation({ items }) {
   const handleClickMenu = () => {
     setIsOpenMenu(!isOpenMenu);
   };
+
+  const totalFavorite = products.filter(
+    (item) => item.isFavorite === true
+  ).length;
 
   return (
     <Container>
@@ -30,6 +35,12 @@ export default function Navigation({ items }) {
             <NavList pages={items} />
 
             <div className={styles.container}>
+              <div className={styles.favoriteWrapper}>
+                <FavoriteIcon className={styles.favoriteIcon} />
+                <p className={styles.favoriteText}>
+                  {totalFavorite === 0 ? '' : totalFavorite}
+                </p>
+              </div>
               <Button type="search" />
               <Button type="menu" />
             </div>
