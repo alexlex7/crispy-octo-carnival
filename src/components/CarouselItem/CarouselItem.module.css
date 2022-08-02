@@ -1,0 +1,10 @@
+.carouselItem {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
+  color: #fff;
+}
+
+.carouselItem:nth-child(3n) {
+  margin-right: 0;
+}

@@ -1,3 +1,24 @@
+.favoriteWrapper {
+  position: relative;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favoriteIcon {
+  width: 24px;
+  height: 24px;
+  fill: #244d4d;
+}
+.favoriteText {
+  position: absolute;
+  right: -5px;
+  bottom: -5px;
+}
+
 @media screen and (max-width: 1204px) {
   .wrapper {
     padding: 40px 0px 40px 0px;
@@ -44,7 +65,9 @@
     align-content: center;
     flex-grow: 5;
   }
-  .container > button:first-child {
-    margin-right: 30px;
+  .container {
+    display: flex;
+    align-items: center;
+    column-gap: 18px;
   }
 }
