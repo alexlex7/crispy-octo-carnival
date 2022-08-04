@@ -249,14 +249,14 @@
       "name": "White Swan Chair",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/chair.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "2",
       "name": "White Swan Table",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/table.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "3",
@@ -270,42 +270,42 @@
       "name": "White Swan Chair",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/chair.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "5",
       "name": "White Swan Table",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/table.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "6",
       "name": "White Swan Sofa",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/sofa.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "7",
       "name": "White Swan Chair",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/chair.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "8",
       "name": "White Swan Table",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/table.jpg",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "9",
       "name": "White Swan Sofa",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/sofa.jpg",
-      "isFavorite": false
+      "isFavorite": true
     }
   ],
   "favorite": [
@@ -316,5 +316,6 @@
       "imageURL": "http://localhost:8080/images/furniture/chair.jpg",
       "isFavorite": false
     }
-  ]
+  ],
+  "feedback": []
 }

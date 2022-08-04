@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import Provider from './contexts/favorite/Provider';
+import 'react-phone-input-2/lib/style.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

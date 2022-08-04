@@ -1,0 +1,69 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+.input {
+  padding: 8px;
+  font-family: inherit;
+  width: 100%;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input:focus {
+  border: 1px solid #1e02bc;
+}
+
+.phoneInput:focus {
+  border: 1px solid #1e02bc;
+}
+.phoneInput:focus + .dropdownBtn {
+  border: 1px solid #1e02bc;
+}
+label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 350px;
+}
+
+.select {
+  font-family: inherit;
+  border: 1px solid #cacaca;
+  outline: none;
+  align-self: flex-start;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-flex;
+  margin: 0 4px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+
+  font-family: sans-serif;
+  font-size: 16px;
+
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #1976d2;
+}
+
+.error {
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  font-size: 14px;
+  color: red;
+}
