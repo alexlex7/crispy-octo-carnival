@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './FeedbackForm.module.css';
-import axios from 'axios';
 import PhoneInput from 'react-phone-input-2';
 
 const initialState = {
@@ -20,9 +19,6 @@ const initialErrors = {
   email: { valid: true, message: '' },
   feedback: { valid: true, message: '' },
 };
-
-const validateEmail =
-  /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 export default function FeedbackForm() {
   const [formData, setFormData] = useState(initialState);
@@ -64,16 +60,6 @@ export default function FeedbackForm() {
     setFormData(initialState);
   };
 
-  // const validatePhone = (value, country) => {
-  //   if (value.match(/12345/)) {
-  //     return 'Invalid value: ' + value + ', ' + country.name;
-  //   } else if (value.match(/1234/)) {
-  //     return false;
-  //   } else {
-  //     return true;
-  //   }
-  // };
-
   const validate = (e) => {
     const { name, value } = e.target;
     switch (name) {
@@ -112,7 +98,7 @@ export default function FeedbackForm() {
         }
         break;
       case 'email':
-        if (!value.match(validateEmail)) {
+        if (!value.match(/@/)) {
           setValidationErrors({
             ...validationErrors,
             [name]: {
