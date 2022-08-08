@@ -3,7 +3,12 @@ import { createPortal } from 'react-dom';
 import styles from './Modal.module.css';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const modalRoot = document.querySelector('#modal-root');
+let modalRoot = document.querySelector('#modal-root');
+if (!modalRoot) {
+  modalRoot = document.createElement('div');
+  modalRoot.setAttribute('id', 'modal-root');
+  document.body.appendChild(modalRoot);
+}
 
 export default function Modal({ isModalOpen, toggleModal, children }) {
   const handleClick = (e) => {
@@ -58,6 +63,13 @@ export default function Modal({ isModalOpen, toggleModal, children }) {
             className={styles.modalContainer}
           >
             <motion.div className={styles.modalContent}>{children}</motion.div>
+            <button
+              onClick={toggleModal}
+              type="button"
+              className={styles.closeBtn}
+            >
+              X
+            </button>
           </motion.div>
         </motion.div>
       )}

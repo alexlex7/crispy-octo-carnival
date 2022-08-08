@@ -13,10 +13,37 @@
 
 .modalContainer {
   padding: 30px 60px;
+  max-width: 600px;
+  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
-  min-height: 600px;
   background-color: #fff;
+}
+
+.closeBtn {
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 50%;
+
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1204px) {
+  .modalContainer {
+    padding: 10px;
+  }
+  .closeBtn {
+    top: 5px;
+    right: 5px;
+  }
 }
