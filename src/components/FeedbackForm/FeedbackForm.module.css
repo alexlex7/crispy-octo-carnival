@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   row-gap: 15px;
+  max-height: 100vh;
+  overflow-y: scroll;
 }
 
 .input {
@@ -24,7 +26,7 @@
 .phoneInput:focus + .dropdownBtn {
   border: 1px solid #1e02bc;
 }
-label {
+.label {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,4 +68,32 @@ label {
   left: 20px;
   font-size: 14px;
   color: red;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.ratingLabel {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  column-gap: 15px;
+}
+
+.ratingLabel > p {
+  position: absolute;
+  right: -35px;
+  top: 12px;
+  font-size: larger;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 1204px) {
+  .label {
+    width: 250px;
+  }
 }
