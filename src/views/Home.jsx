@@ -7,12 +7,15 @@ import ClientsSection from '../components/ClientsSection/ClientsSection';
 import AboutSection from '../components/AboutSection/AboutSection';
 import Products from '../components/Products/Products';
 import favoriteContext from '../contexts/favorite/context';
+import Modal from '../components/Modal/Modal';
+import FeedbackForm from '../components/FeedbackForm/FeedbackForm';
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 1204 });
   const [clients, setClients] = useState(null);
   const [features, setFeatures] = useState(null);
   const { products, setProducts } = useContext(favoriteContext);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleChangeFavorite = async (id, checked) => {
     try {
@@ -70,6 +73,10 @@ export default function Home() {
     })();
   }, [setProducts]);
 
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <>
       <Hero />
@@ -84,6 +91,22 @@ export default function Home() {
       {products.length > 0 && (
         <Products products={products} handleFavorite={handleChangeFavorite} />
       )}
+      <button
+        style={{
+          display: 'block',
+          margin: '0 auto',
+          padding: '20px',
+          fontSize: '18px',
+          cursor: 'pointer',
+        }}
+        onClick={toggleModal}
+      >
+        Leave feedback
+      </button>
+
+      <Modal toggleModal={toggleModal} isModalOpen={isModalOpen}>
+        <FeedbackForm />
+      </Modal>
     </>
   );
 }
