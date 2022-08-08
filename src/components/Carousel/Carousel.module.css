@@ -4,19 +4,12 @@
 .carousel {
   margin: 0 auto;
   overflow: hidden;
-  max-width: 1200px;
+  max-width: 380px;
 }
 
 .inner {
   white-space: nowrap;
   transition: transform 1s;
-}
-.indicators {
-  position: absolute;
-  right: 0;
-  top: -120px;
-  display: flex;
-  justify-content: center;
 }
 
 .indicators > button {
@@ -43,4 +36,27 @@
 
 .icon {
   fill: #666666;
+}
+@media screen and (max-width: 1204px) {
+  .indicators {
+    position: absolute;
+    right: 20px;
+    top: -70px;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1205px) {
+  .carousel {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+  }
+  .indicators {
+    position: absolute;
+    right: 0;
+    top: -120px;
+    display: flex;
+    justify-content: center;
+  }
 }

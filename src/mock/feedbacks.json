@@ -1,0 +1,35 @@
+[
+  {
+    "firstName": "Alex",
+    "lastName": "Losev",
+    "phone": "380986670595",
+    "email": "a@t.com",
+    "feedback": "The best furniture I have seen! Thank you for yor service. The furniture has excellent quality. !!!!!!!!!!!!!!!!!!!!!!!!!!!",
+    "department": "value1",
+    "permission": true,
+    "rating": 5,
+    "id": 7
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Losev",
+    "phone": "380986670595",
+    "email": "a@t.com",
+    "feedback": "The best furniture I have seen! Thank you for yor service. The furniture has excellent quality. !!!!!!!!!!!!!!!!!!!!!!!!!!!",
+    "department": "value1",
+    "permission": true,
+    "rating": 3.5,
+    "id": 7
+  },
+  {
+    "firstName": "Alex",
+    "lastName": "Losev",
+    "phone": "380986670595",
+    "email": "a@t.com",
+    "feedback": "The best furniture I have seen! Thank you for yor service. The furniture has excellent quality. !!!!!!!!!!!!!!!!!!!!!!!!!!!",
+    "department": "value1",
+    "permission": true,
+    "rating": 4.5,
+    "id": 7
+  }
+]

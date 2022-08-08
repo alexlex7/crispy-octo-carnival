@@ -256,7 +256,7 @@
       "name": "White Swan Table",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/table.jpg",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": "3",
@@ -270,14 +270,14 @@
       "name": "White Swan Chair",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/chair.jpg",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": "5",
       "name": "White Swan Table",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/table.jpg",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": "6",
@@ -317,5 +317,149 @@
       "isFavorite": false
     }
   ],
-  "feedback": []
+  "feedback": [
+    {
+      "firstName": "Alex",
+      "lastName": "Losev",
+      "phone": "380986670595",
+      "email": "a@t.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 5,
+      "id": 5
+    },
+    {
+      "firstName": "Alex",
+      "lastName": "Losev",
+      "phone": "380986670595",
+      "email": "a@t.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 3.5,
+      "id": 6
+    },
+    {
+      "firstName": "Alex",
+      "lastName": "Losev",
+      "phone": "380986670595",
+      "email": "a@t.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 4.5,
+      "id": 7
+    },
+    {
+      "firstName": "Ann",
+      "lastName": "Ann",
+      "phone": "380984456898",
+      "email": "a@w.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value2",
+      "permission": true,
+      "rating": 4,
+      "id": 8
+    },
+    {
+      "firstName": "Neo",
+      "lastName": "Hill",
+      "phone": "380986690959",
+      "email": "a@e.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 3.5,
+      "id": 9
+    },
+    {
+      "firstName": "Rick",
+      "lastName": "Morty",
+      "phone": "380986680585",
+      "email": "a@n.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 4,
+      "id": 10
+    },
+    {
+      "firstName": "Kate",
+      "lastName": "Newman",
+      "phone": "380986680757",
+      "email": "a@r.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 3.5,
+      "id": 11
+    },
+    {
+      "firstName": "Customer",
+      "lastName": "adfasdf",
+      "phone": "380986687585",
+      "email": "sda@sdfsd",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 4.5,
+      "id": 12
+    },
+    {
+      "firstName": "Jack",
+      "lastName": "adadada",
+      "phone": "380988875858",
+      "email": "as@asa.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 5,
+      "id": 13
+    },
+    {
+      "firstName": "Nastya",
+      "lastName": "adfsfs",
+      "phone": "380986670595",
+      "email": "sfds@sfdsdf.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value2",
+      "permission": true,
+      "rating": 3.5,
+      "id": 14
+    },
+    {
+      "firstName": "Alex",
+      "lastName": "adfs",
+      "phone": "380568850858",
+      "email": "adsfa@casdf.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 4.5,
+      "id": 15
+    },
+    {
+      "firstName": "dfasdf",
+      "lastName": "safdsfsf",
+      "phone": "",
+      "email": "asdfas@adfs.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 3.5,
+      "id": 16
+    },
+    {
+      "firstName": "Oleh",
+      "lastName": "Joh",
+      "phone": "380978890595",
+      "email": "sdasc@com.adfas",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 4.5,
+      "id": 17
+    }
+  ]
 }

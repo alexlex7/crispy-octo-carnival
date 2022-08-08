@@ -1,5 +1,6 @@
 import { withRouter } from 'storybook-addon-react-router-v6';
 import '../src/index.css';
+import 'react-phone-input-2/lib/style.css';
 export const decorators = [withRouter];
 
 export const parameters = {
