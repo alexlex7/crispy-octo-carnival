@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render star rating component 1`] = `
+<DocumentFragment>
+  <div
+    class="ratingWrapper"
+  >
+    <div
+      class="starsWrapper"
+    >
+      <svg
+        class="icon"
+        fill="none"
+      >
+        star.svg
+      </svg>
+      <svg
+        class="icon"
+        fill="none"
+      >
+        star.svg
+      </svg>
+      <svg
+        class="icon"
+        fill="none"
+      >
+        star.svg
+      </svg>
+      <svg
+        class="icon"
+        fill="none"
+      >
+        star.svg
+      </svg>
+      <svg
+        class="icon"
+        fill="none"
+      >
+        star.svg
+      </svg>
+    </div>
+    <div
+      class="starsActiveWrapper"
+      style="width: 80%;"
+    >
+      <div
+        style="display: flex;"
+      >
+        <svg
+          class="activeIcon"
+          fill="orange"
+        >
+          star.svg
+        </svg>
+        <svg
+          class="activeIcon"
+          fill="orange"
+        >
+          star.svg
+        </svg>
+        <svg
+          class="activeIcon"
+          fill="orange"
+        >
+          star.svg
+        </svg>
+        <svg
+          class="activeIcon"
+          fill="orange"
+        >
+          star.svg
+        </svg>
+        <svg
+          class="activeIcon"
+          fill="orange"
+        >
+          star.svg
+        </svg>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
