@@ -1,0 +1,16 @@
+.list {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 1204px) {
+  .list {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1205px) {
+  .list {
+    padding-bottom: 140px;
+    column-gap: 30px;
+  }
+}
