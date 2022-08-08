@@ -9,6 +9,8 @@ import Products from '../components/Products/Products';
 import favoriteContext from '../contexts/favorite/context';
 import Modal from '../components/Modal/Modal';
 import FeedbackForm from '../components/FeedbackForm/FeedbackForm';
+import FeedbackList from '../components/FeedbackList/FeedbackList';
+import { addFeedback, getFeedbacks } from '../API/feedback';
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 1204 });
@@ -16,6 +18,7 @@ export default function Home() {
   const [features, setFeatures] = useState(null);
   const { products, setProducts } = useContext(favoriteContext);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [feedbacks, setFeedbacks] = useState(null);
 
   const handleChangeFavorite = async (id, checked) => {
     try {
@@ -73,8 +76,29 @@ export default function Home() {
     })();
   }, [setProducts]);
 
+  useEffect(() => {
+    (async () => {
+      const data = await getFeedbacks();
+      setFeedbacks(data);
+    })();
+  }, [setFeedbacks]);
+
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
+  };
+
+  const filteredFeedbacks = feedbacks
+    ? feedbacks
+        .filter((item) => item.rating >= 3.5)
+        .slice(-3)
+        .reverse()
+    : null;
+
+  const onSubmitForm = async (feedback) => {
+    await addFeedback(feedback);
+    toggleModal();
+    const response = await getFeedbacks();
+    setFeedbacks(response);
   };
 
   return (
@@ -91,13 +115,22 @@ export default function Home() {
       {products.length > 0 && (
         <Products products={products} handleFavorite={handleChangeFavorite} />
       )}
+
+      {feedbacks && !isMobile && <FeedbackList items={filteredFeedbacks} />}
+      {feedbacks && isMobile && (
+        <FeedbackList items={filteredFeedbacks.slice(0, 1)} />
+      )}
       <button
         style={{
           display: 'block',
           margin: '0 auto',
+          marginBottom: '50px',
           padding: '20px',
           fontSize: '18px',
           cursor: 'pointer',
+          backgroundColor: '#244d4d',
+          color: '#fff',
+          border: 'none',
         }}
         onClick={toggleModal}
       >
@@ -105,7 +138,7 @@ export default function Home() {
       </button>
 
       <Modal toggleModal={toggleModal} isModalOpen={isModalOpen}>
-        <FeedbackForm />
+        <FeedbackForm onSubmitForm={onSubmitForm} toggleModal={toggleModal} />
       </Modal>
     </>
   );
