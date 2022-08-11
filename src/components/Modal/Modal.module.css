@@ -12,15 +12,11 @@
 }
 
 .modalContainer {
-  padding: 30px 60px;
-  max-width: 600px;
-  max-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-
   background-color: #fff;
+  position: relative;
 }
 
 .closeBtn {
@@ -40,10 +36,21 @@
 
 @media screen and (max-width: 1204px) {
   .modalContainer {
-    padding: 10px;
+    padding: 40px 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
   }
   .closeBtn {
     top: 5px;
     right: 5px;
+  }
+}
+
+@media screen and (min-width: 1205px) {
+  .modalContainer {
+    padding: 30px 60px;
+    max-width: 600px;
+    max-height: 100vh;
   }
 }

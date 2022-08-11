@@ -43,6 +43,10 @@
 
   .container {
     padding-top: 15px;
+    display: flex;
+  }
+  .favoriteWrapper {
+    margin-right: 8px;
   }
 }
 

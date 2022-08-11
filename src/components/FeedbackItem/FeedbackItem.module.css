@@ -22,6 +22,10 @@
 }
 
 .text {
+  max-height: 100px;
   font-size: 14px;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
 }

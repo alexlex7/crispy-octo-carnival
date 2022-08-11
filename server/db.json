@@ -1,20 +1,16 @@
 {
   "pages": [
     {
-      "text": "Home",
-      "to": "/"
-    },
-    {
       "text": "About",
       "to": "about"
     },
     {
-      "text": "Features",
-      "to": "features"
+      "text": "Furniture",
+      "to": "furniture"
     },
     {
-      "text": "Contact",
-      "to": "contact"
+      "text": "Feedbacks",
+      "to": "feedbacks"
     }
   ],
   "clients": [
@@ -249,7 +245,7 @@
       "name": "White Swan Chair",
       "price": 40,
       "imageURL": "http://localhost:8080/images/furniture/chair.jpg",
-      "isFavorite": true
+      "isFavorite": false
     },
     {
       "id": "2",
@@ -440,7 +436,7 @@
       "id": 15
     },
     {
-      "firstName": "dfasdf",
+      "firstName": "Rick",
       "lastName": "safdsfsf",
       "phone": "",
       "email": "asdfas@adfs.com",
@@ -460,6 +456,28 @@
       "permission": true,
       "rating": 4.5,
       "id": 17
+    },
+    {
+      "firstName": "Alex",
+      "lastName": "Losev",
+      "phone": "38098667585",
+      "email": "as@sdfs.com",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value2",
+      "permission": true,
+      "rating": 3.5,
+      "id": 18
+    },
+    {
+      "firstName": "dsfasdfsadf",
+      "lastName": "asdfdsdf",
+      "phone": "380986685585",
+      "email": "sdfa@sadasd",
+      "feedback": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dignissimos recusandae deserunt accusamus est illum nesciunt soluta quae iusto.",
+      "department": "value1",
+      "permission": true,
+      "rating": 3.5,
+      "id": 20
     }
   ]
 }
