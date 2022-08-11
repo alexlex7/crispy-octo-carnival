@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from './FeedbackForm.module.css';
 import PhoneInput from 'react-phone-input-2';
-import axios from 'axios';
 import StarRating from '../StarRating/StarRating';
 import PropTypes from 'prop-types';
+import { calculateRating } from '../../helpers/calculateRating';
+import { validateForm } from '../../helpers/formValidation.js';
 
 const initialState = {
   firstName: '',
@@ -59,128 +60,24 @@ export default function FeedbackForm({ onSubmitForm }) {
     }
   };
 
-  const validate = (name, value) => {
-    switch (name) {
-      case 'firstName':
-        if (value.length < 2) {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: {
-              valid: false,
-              message: 'First name must be 2 char. min.',
-            },
-          });
-        } else {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: { valid: true, message: '' },
-          });
-        }
-        break;
-      case 'lastName':
-        if (value.length < 2) {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: {
-              valid: false,
-              message: 'Last name must be 2 char. min.',
-            },
-          });
-        } else {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: { valid: true, message: '' },
-          });
-        }
-        break;
-      case 'email':
-        if (!value.match(/@/)) {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: {
-              valid: false,
-              message: 'Email must be valid.',
-            },
-          });
-        } else {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: { valid: true, message: '' },
-          });
-        }
-        break;
-      case 'feedback':
-        if (value.length < 100) {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: {
-              valid: false,
-              message: 'Feedback must be 100 char. min.',
-            },
-          });
-        } else if (value.length > 150) {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: {
-              valid: false,
-              message: 'Feedback must be 150 char. max.',
-            },
-          });
-        } else {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: { valid: true, message: '' },
-          });
-        }
-        break;
-      case 'phone':
-        if (value.length < 19) {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: {
-              valid: false,
-              message: 'Phone must be valid',
-            },
-          });
-        } else {
-          setValidationErrors({
-            ...validationErrors,
-            [name]: { valid: true, message: '' },
-          });
-        }
-        break;
-      default:
-        break;
-    }
-  };
-
   const validationHandler = (e) => {
     const { name, value } = e.target;
-    validate(name, value);
+    const validateResult = validateForm(name, value);
+    if (validateResult === undefined) {
+      return;
+    }
+    setValidationErrors({ ...validationErrors, ...validateResult });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     onSubmitForm(formData);
-    // try {
-    //   await axios({
-    //     method: 'post',
-    //     url: 'http://localhost:8080/feedback',
-    //     data: {
-    //       ...formData,
-    //     },
-    //   });
-    //   await onSubmitForm(formData);
-    //   toggleModal();
-    // } catch (error) {
-    //   console.log(error);
-    // }
     setFormData(initialState);
   };
 
-  const handleSetRating = (rating) => {
-    const countRaiting = Math.round(((rating / 200).toPrecision(2) * 100) / 10);
-    setFormData({ ...formData, rating: (5 / 100) * (countRaiting * 10) });
+  const handleSetRating = (mousePosition) => {
+    const rating = calculateRating(mousePosition);
+    setFormData({ ...formData, rating });
   };
 
   return (
