@@ -19,6 +19,7 @@
     "react-responsive": "^9.0.0-beta.10",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.7",
     "storybook-addon-pseudo-states": "^1.15.1",
     "storybook-addon-react-router-v6": "^0.1.10",
     "web-vitals": "^2.1.4"
@@ -27,6 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "npm run test -- --env=jsdom --coverage",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
@@ -72,6 +74,7 @@
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
+    "react-test-renderer": "^18.2.0",
     "webpack": "^5.73.0"
   }
 }

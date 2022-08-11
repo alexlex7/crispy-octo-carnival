@@ -77,3 +77,8 @@ code {
   position: relative;
   z-index: 999;
 }
+
+.scroll-hidden {
+  overflow: hidden;
+  padding-right: 17px;
+}

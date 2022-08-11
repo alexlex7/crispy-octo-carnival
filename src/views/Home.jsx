@@ -11,6 +11,17 @@ import Modal from '../components/Modal/Modal';
 import FeedbackForm from '../components/FeedbackForm/FeedbackForm';
 import FeedbackList from '../components/FeedbackList/FeedbackList';
 import { addFeedback, getFeedbacks } from '../API/feedback';
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
+
+const bodyLink = document.querySelector('body');
 
 export default function Home() {
   const isMobile = useMediaQuery({ maxWidth: 1204 });
@@ -40,7 +51,6 @@ export default function Home() {
       console.log(error);
     }
   };
-
   useEffect(() => {
     (async () => {
       try {
@@ -101,6 +111,15 @@ export default function Home() {
     setFeedbacks(response);
   };
 
+  useEffect(() => {
+    if (isModalOpen) {
+      bodyLink.classList.add('scroll-hidden');
+    }
+    if (!isModalOpen) {
+      bodyLink.classList.remove('scroll-hidden');
+    }
+  });
+
   return (
     <>
       <Hero />
@@ -111,14 +130,26 @@ export default function Home() {
           totalClients={clients.totalClients}
         />
       )}
-      {features && <AboutSection data={features} />}
+      {features && (
+        <Element name="about">
+          <AboutSection data={features} />
+        </Element>
+      )}
       {products.length > 0 && (
-        <Products products={products} handleFavorite={handleChangeFavorite} />
+        <Element name="furniture">
+          <Products products={products} handleFavorite={handleChangeFavorite} />
+        </Element>
       )}
 
-      {feedbacks && !isMobile && <FeedbackList items={filteredFeedbacks} />}
+      {feedbacks && !isMobile && (
+        <Element name="feedbacks">
+          <FeedbackList items={filteredFeedbacks} />
+        </Element>
+      )}
       {feedbacks && isMobile && (
-        <FeedbackList items={filteredFeedbacks.slice(0, 1)} />
+        <Element name="feedbacks">
+          <FeedbackList items={filteredFeedbacks.slice(0, 1)} />
+        </Element>
       )}
       <button
         style={{

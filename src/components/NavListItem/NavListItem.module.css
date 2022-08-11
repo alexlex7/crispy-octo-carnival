@@ -12,6 +12,7 @@
     font-weight: 400;
     color: #161616;
     text-decoration: none;
+    cursor: default;
   }
 
   .active {
@@ -32,6 +33,7 @@
     font-weight: 400;
     color: #161616;
     text-decoration: none;
+    cursor: default;
   }
 
   .active {
