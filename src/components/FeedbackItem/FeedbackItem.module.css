@@ -1,0 +1,27 @@
+.item {
+  padding: 20px 20px 20px 35px;
+  width: 380px;
+  height: 230px;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+}
+
+.wrapper {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.name {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 400;
+}

@@ -1,0 +1,30 @@
+.ratingWrapper {
+  position: relative;
+  width: 200px;
+}
+.starsWrapper {
+  display: flex;
+}
+
+.starsActiveWrapper {
+  position: absolute;
+  top: 0;
+  width: 200px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  fill: lightgray;
+}
+.activeIcon {
+  display: block;
+  width: 40px;
+  height: 40px;
+}

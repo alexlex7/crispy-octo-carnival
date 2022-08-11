@@ -1,10 +1,15 @@
 .carouselItem {
   display: inline-flex;
   align-items: center;
-  margin-right: 30px;
+
   color: #fff;
 }
 
+@media screen and (min-width: 1205px) {
+  .carouselItem {
+    margin-right: 30px;
+  }
+}
 .carouselItem:nth-child(3n) {
   margin-right: 0;
 }

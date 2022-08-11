@@ -1,20 +1,12 @@
-.wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  padding-top: 140px;
-  padding-bottom: 140px;
-}
-
 .title {
   margin-bottom: 20px;
 
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 52px;
-
-  color: #242424;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  color: #244d4d;
 }
 
 .text {
@@ -24,8 +16,46 @@
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
+  font-size: 12px;
+  line-height: 19px;
 
   color: #383738;
+}
+
+@media screen and (max-width: 1204px) {
+  .wrapper {
+    width: 429px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .title {
+    padding-left: 20px;
+  }
+  .text {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1205px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+  .title {
+    margin-bottom: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+
+    color: #242424;
+  }
+  .text {
+    font-size: 20px;
+    line-height: 27px;
+  }
 }

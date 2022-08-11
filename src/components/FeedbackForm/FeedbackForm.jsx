@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import styles from './FeedbackForm.module.css';
 import PhoneInput from 'react-phone-input-2';
+import axios from 'axios';
+import StarRating from '../StarRating/StarRating';
+import PropTypes from 'prop-types';
 
 const initialState = {
   firstName: '',
@@ -10,6 +13,7 @@ const initialState = {
   feedback: '',
   department: 'value1',
   permission: false,
+  rating: 0,
 };
 
 const initialErrors = {
@@ -20,7 +24,7 @@ const initialErrors = {
   feedback: { valid: true, message: '' },
 };
 
-export default function FeedbackForm() {
+export default function FeedbackForm({ onSubmitForm }) {
   const [formData, setFormData] = useState(initialState);
   const [validationErrors, setValidationErrors] = useState(initialErrors);
 
@@ -29,7 +33,8 @@ export default function FeedbackForm() {
   };
 
   const handleChangeInputs = (e) => {
-    switch (e.target.name) {
+    const { name } = e.target;
+    switch (name) {
       case 'firstName':
         setFormData({ ...formData, firstName: e.target.value });
         break;
@@ -54,14 +59,7 @@ export default function FeedbackForm() {
     }
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    setFormData(initialState);
-  };
-
-  const validate = (e) => {
-    const { name, value } = e.target;
+  const validate = (name, value) => {
     switch (name) {
       case 'firstName':
         if (value.length < 2) {
@@ -75,8 +73,7 @@ export default function FeedbackForm() {
         } else {
           setValidationErrors({
             ...validationErrors,
-            [name]: { valid: true },
-            message: '',
+            [name]: { valid: true, message: '' },
           });
         }
         break;
@@ -92,8 +89,7 @@ export default function FeedbackForm() {
         } else {
           setValidationErrors({
             ...validationErrors,
-            [name]: { valid: true },
-            message: '',
+            [name]: { valid: true, message: '' },
           });
         }
         break;
@@ -109,8 +105,7 @@ export default function FeedbackForm() {
         } else {
           setValidationErrors({
             ...validationErrors,
-            [name]: { valid: true },
-            message: '',
+            [name]: { valid: true, message: '' },
           });
         }
         break;
@@ -134,8 +129,7 @@ export default function FeedbackForm() {
         } else {
           setValidationErrors({
             ...validationErrors,
-            [name]: { valid: true },
-            message: '',
+            [name]: { valid: true, message: '' },
           });
         }
         break;
@@ -151,8 +145,7 @@ export default function FeedbackForm() {
         } else {
           setValidationErrors({
             ...validationErrors,
-            [name]: { valid: true },
-            message: '',
+            [name]: { valid: true, message: '' },
           });
         }
         break;
@@ -161,9 +154,38 @@ export default function FeedbackForm() {
     }
   };
 
+  const validationHandler = (e) => {
+    const { name, value } = e.target;
+    validate(name, value);
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    onSubmitForm(formData);
+    // try {
+    //   await axios({
+    //     method: 'post',
+    //     url: 'http://localhost:8080/feedback',
+    //     data: {
+    //       ...formData,
+    //     },
+    //   });
+    //   await onSubmitForm(formData);
+    //   toggleModal();
+    // } catch (error) {
+    //   console.log(error);
+    // }
+    setFormData(initialState);
+  };
+
+  const handleSetRating = (rating) => {
+    const countRaiting = Math.round(((rating / 200).toPrecision(2) * 100) / 10);
+    setFormData({ ...formData, rating: (5 / 100) * (countRaiting * 10) });
+  };
+
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
-      <label>
+      <label className={styles.label}>
         First name
         <input
           className={styles.input}
@@ -172,9 +194,9 @@ export default function FeedbackForm() {
           value={formData.firstName}
           onChange={handleChangeInputs}
           required
-          minLength="2"
+          minLength="1"
           placeholder="enter your first name"
-          onBlur={validate}
+          onBlur={validationHandler}
         />
         {!validationErrors.firstName.valid ? (
           <span className={styles.error}>
@@ -182,7 +204,7 @@ export default function FeedbackForm() {
           </span>
         ) : null}
       </label>
-      <label>
+      <label className={styles.label}>
         Last name
         <input
           className={styles.input}
@@ -193,7 +215,7 @@ export default function FeedbackForm() {
           required
           minLength="2"
           placeholder="enter your last name"
-          onBlur={validate}
+          onBlur={validationHandler}
         />
         {!validationErrors.lastName.valid ? (
           <span className={styles.error}>
@@ -201,7 +223,7 @@ export default function FeedbackForm() {
           </span>
         ) : null}
       </label>
-      <label>
+      <label className={styles.label}>
         Phone
         <PhoneInput
           inputProps={{ name: 'phone' }}
@@ -211,13 +233,13 @@ export default function FeedbackForm() {
           value={formData.phone}
           onChange={handlePhoneChange}
           placeholder="+380 (93) 321 23"
-          onBlur={validate}
+          onBlur={validationHandler}
         />
         {!validationErrors.phone.valid ? (
           <span className={styles.error}>{validationErrors.phone.message}</span>
         ) : null}
       </label>
-      <label>
+      <label className={styles.label}>
         Email
         <input
           className={styles.input}
@@ -227,13 +249,13 @@ export default function FeedbackForm() {
           onChange={handleChangeInputs}
           required
           placeholder="email"
-          onBlur={validate}
+          onBlur={validationHandler}
         />
         {!validationErrors.email.valid ? (
           <span className={styles.error}>{validationErrors.email.message}</span>
         ) : null}
       </label>
-      <label>
+      <label className={styles.label}>
         Feedback
         <textarea
           className={styles.input}
@@ -245,7 +267,7 @@ export default function FeedbackForm() {
           minLength="100"
           maxLength="150"
           placeholder="feedback text"
-          onBlur={validate}
+          onBlur={validationHandler}
         ></textarea>
         {!validationErrors.feedback.valid ? (
           <span className={styles.error}>
@@ -253,7 +275,14 @@ export default function FeedbackForm() {
           </span>
         ) : null}
       </label>
-      <label>
+      <label className={styles.ratingLabel}>
+        <StarRating
+          handleSetRating={handleSetRating}
+          rating={formData.rating}
+        />
+        <p>{formData.rating}</p>
+      </label>
+      <label className={styles.label}>
         Department
         <select
           name="department"
@@ -261,24 +290,31 @@ export default function FeedbackForm() {
           onChange={handleChangeInputs}
           className={styles.select}
         >
-          <option value="value1">Значение 1</option>
-          <option value="value2">Значение 2</option>
-          <option value="value3">Значение 3</option>
+          <option value="value1">Sales</option>
+          <option value="value2">Delivery</option>
+          <option value="value3">Support</option>
         </select>
       </label>
-      <label>
-        permission to process personal data
+      <div className={styles.wrapper}>
+        <label htmlFor="permission">
+          - permission to process personal data
+        </label>
         <input
+          id="permission"
           type="checkbox"
           name="permission"
           checked={formData.permission}
           onChange={handleChangeInputs}
           required
         />
-      </label>
+      </div>
       <button className={styles.btn} type="submit">
         Send feedback
       </button>
     </form>
   );
 }
+
+FeedbackForm.propTypes = {
+  onSubmitForm: PropTypes.func.isRequired,
+};

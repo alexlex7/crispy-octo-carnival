@@ -2,14 +2,18 @@ import React, { useState } from 'react';
 import styles from './Carousel.module.css';
 import { ReactComponent as NextIcon } from '../../assets/images/next.svg';
 import { ReactComponent as PrevIcon } from '../../assets/images/prev.svg';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Carousel({ children }) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const isMobile = useMediaQuery({ maxWidth: 1204 });
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = React.Children.count(children) - 1;
-    } else if (newIndex >= Math.ceil(React.Children.count(children) / 3)) {
+    } else if (
+      newIndex >= Math.ceil(React.Children.count(children) / (isMobile ? 1 : 3))
+    ) {
       newIndex = 0;
     }
 
@@ -45,9 +49,6 @@ export default function Carousel({ children }) {
           onClick={() => {
             updateIndex(activeIndex + 1);
           }}
-          disabled={
-            activeIndex === Math.ceil(React.Children.count(children) / 3 - 1)
-          }
         >
           <NextIcon className={styles.icon} />
         </button>
